@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>26andfour</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="images/logo.svg" alt="logo">
+            <nav>
+                <a class="hide-desktop" href="#">
+                    <img id="menu" class="menu" src="images/ham.svg" alt="toggle navbar menu">
+                </a>
+                <ul id="nav" class="show-desktop hide-mobile">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <img src="images/server.svg" alt="server graphic" class="server">
+
+            <h1>Web Hosting for the Modern Era</h1>
+            <p class="subhead">Go serverless and pay only for what you use.</p>
+
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="icon 1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit aut quam possimus animi
+                        provident omnis mollitia soluta? Sed, ex facilis?</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="icon 2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit aut quam possimus animi
+                        provident omnis mollitia soluta? Sed, ex facilis?</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="icon 3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit aut quam possimus animi
+                        provident omnis mollitia soluta? Sed, ex facilis?</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="user 1">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint perspiciatis,
+                            officiis sed aut asperiores!</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="user 2">
+                        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas sint perspiciatis,
+                            officiis sed aut asperiores!</blockquote>
+                        <figcaption>- John Doe</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Start your free trial now!</h2>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" alt="white logo">
+                </a>
+                <p class="address">Lorem ipsum, 90202 <br>KSA</p>
+                <ul class="footer-links">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const menu = document.getElementById('menu');
+        const nav = document.getElementById('nav')
+        const exit = document.getElementById('exit')
+
+        menu.addEventListener('click', (e) => {
+            e.preventDefault();
+            nav.classList.toggle('hide-mobile')
+        })
+
+        exit.addEventListener('click', (e) => {
+            e.preventDefault();
+            nav.classList.toggle('hide-mobile')
+        })
+    </script>
+</body>
+
+</html>
